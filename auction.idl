@@ -1,0 +1,20 @@
+module auction
+{
+
+	interface AuctionUser
+	{
+		boolean offer_item(in string user_id, in string item_desc, in float initial_price);
+
+		boolean sell(in string user_id);
+
+		boolean bid(in string user_id, in float price);
+
+		string view_high_bidder();
+
+		string view_bid_status();
+		
+		string view_auction_status();
+	
+	};
+	
+};
